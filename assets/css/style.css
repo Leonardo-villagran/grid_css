@@ -5,6 +5,7 @@ body{
     font-family:  'Roboto','Open Sans';
 
 }
+/* Esquema principal */
 .header{
     grid-area: header;
     background-color: #25527b;
@@ -24,7 +25,6 @@ body{
     align-items: flex-start;
     margin: 0;
     padding: 0;
-    
 }
 .main{
     grid-area: main;
@@ -38,6 +38,12 @@ body{
     background-color: white;
     color: gray;
     width:100%;
+    height: 40px; 
+}
+.footer a{
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
 }
 
 .grid-container{
@@ -50,23 +56,15 @@ body{
     grid-gap: 5px;
 }
 
-.grid-container div{
-    margin: 0px;
-    padding: 0px;
-}
 .grid-container_main {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
     justify-content: center;
-    align-items: flex-end;
-    
+    align-items: center;
 }
 
-.grid-item {
-    background-color:#e7e7e7 ;
-        
-}
+/* Menu */
 .menu a{
     text-decoration: none;
     color: black;
@@ -78,55 +76,54 @@ body{
 ul{
     margin: 0;
     padding: 10px;
-
 }
 li{
     list-style:none;
-    padding: 5px;
+    padding: 3px;
 }
 .li_title{
-    font-weight: 900;
+    font-weight: 500;
     font-size: 15px;
+    padding: 0px 0px 5px 0px;
 }
 .li_normal{
-    font-weight: 400;
-    font-size: 13px;
+    font-weight: 300;
+    font-size: 12px;
 }
 .cantidad{
     color: grey;
     font-weight: 100;
 }
-
+/* Cards - Productos*/
 .card{
     background-color: white;
     display: flex;
     flex-direction:column;
     justify-content: center;
     text-align: center;
-    
 }
 .card .image{
     margin: 0;
     padding: 0;
 }
 .card .title{
-    font-weight: 900;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 13px;
     margin: 0;
     padding: 5px;
 }
 .card .value{
     color: grey;
-    font-weight: 100;
-    font-size: 13px;
+    font-weight: 300;
+    font-size: 11px;
     margin: 0;
     padding: 5px;
 }
 .card .link{
     background-color:#25527b;
     color: white;
-    font-weight: 100;
-    font-size: 13px;
+    font-weight: 500;
+    font-size: 11px;
     margin: 0;
     padding: 5px;
 }
@@ -134,4 +131,4 @@ img{
     object-fit: cover;
     width:100%;
     height:100%;
-  }
+}
