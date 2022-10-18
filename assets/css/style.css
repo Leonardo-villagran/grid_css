@@ -1,0 +1,137 @@
+body{
+    background-color:  white;
+    margin: 0;
+    margin: 0;
+    font-family:  'Roboto','Open Sans';
+
+}
+.header{
+    grid-area: header;
+    background-color: #25527b;
+    color: white;
+    height: 40px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    grid-area: menu;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    
+}
+.main{
+    grid-area: main;
+    background-color: #e7e7e7;
+}
+.footer{
+    grid-area: footer;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    color: gray;
+    width:100%;
+}
+
+.grid-container{
+    background-color: #e7e7e7;
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'menu main main  main'
+        'footer footer footer footer';
+    grid-gap: 5px;
+}
+
+.grid-container div{
+    margin: 0px;
+    padding: 0px;
+}
+.grid-container_main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.grid-item {
+    background-color:#e7e7e7 ;
+        
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    margin: 0;
+    padding: 10px;
+
+}
+li{
+    list-style:none;
+    padding: 5px;
+}
+.li_title{
+    font-weight: 900;
+    font-size: 15px;
+}
+.li_normal{
+    font-weight: 400;
+    font-size: 13px;
+}
+.cantidad{
+    color: grey;
+    font-weight: 100;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    
+}
+.card .image{
+    margin: 0;
+    padding: 0;
+}
+.card .title{
+    font-weight: 900;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px;
+}
+.card .value{
+    color: grey;
+    font-weight: 100;
+    font-size: 13px;
+    margin: 0;
+    padding: 5px;
+}
+.card .link{
+    background-color:#25527b;
+    color: white;
+    font-weight: 100;
+    font-size: 13px;
+    margin: 0;
+    padding: 5px;
+}
+img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+  }
