@@ -51,17 +51,17 @@ body{
     display: grid;
     grid-template-areas:
         'header header header header'
-        'menu main main  main'
+        'menu main main main'
         'footer footer footer footer';
     grid-gap: 5px;
 }
 
 .grid-container_main {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 /* Menu */
@@ -99,7 +99,7 @@ li{
     background-color: white;
     display: flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
 }
 .card .image{
